@@ -1,0 +1,46 @@
+<?php
+class Config_DB_Class_PU
+{
+    // Die Variablen/Parameter für die Datenbankverbindung deklarieren und Initialisieren:
+    public static $strHost         = 'rdbms.strato.de'; // Hier die Server-Adresse eingeben
+    public static $strDatabaseName = 'DB3603254'; // Hier den Datenbank-Namen eingeben
+    public static $strUsername     = 'U3603254'; // Hier den MySQL User-Namen eingeben
+    public static $strPassword     = 'sieger123ameise'; // Hier das MySQL Passwort eingeben
+
+    // ab hier nichts mehr verändern !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // ab hier nichts mehr verändern !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // ab hier nichts mehr verändern !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    public static function verbindung_zur_Datenbank_aufbauen()
+    {
+        // echo '<h1>Function Anfang!</h1>';
+        $strHostInc         = self::$strHost;
+        $strDatabaseNameInc = self::$strDatabaseName;
+        $strUsernameInc     = self::$strUsername;
+        $strPasswordInc     = self::$strPassword;
+        $strCharsetInc      = 'utf8mb4';
+
+        $strHostTemp = 'mysql:host='.$strHostInc.';dbname='.$strDatabaseNameInc.';charset='.$strCharsetInc;
+        $objPDO = new PDO($strHostTemp, $strUsernameInc, $strPasswordInc);
+        // var_dump($objPDO);
+
+        return $objPDO;
+    }
+
+    public static function verbindung_zur_Datenbank_abbauen($statement, $objPDO)
+    {
+        $statement = null;
+        // var_dump($statement);
+        $objPDO = null;
+        // var_dump($objPDO);
+    }
+
+
+
+}
+
+
+
+
+
+?>

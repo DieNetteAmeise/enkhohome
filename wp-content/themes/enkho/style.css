@@ -1,0 +1,59 @@
+/*
+Theme Name: ENKHO
+Theme URI: http://www.enkhoholding.de/
+Author: Peter Unden
+Author URI: https://anwahl.de/
+Description: Theme für die Firma ENKHO Holding GmbH
+Version: 1.0
+Text Domain: enkho
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* für class Helper.php */
+.container-variablen {background-color: #faf2e0;}
+
+/* general */
+body {padding-top: 130px;} /* Seitenkopf Abstand oben: Platz für header und nav */
+.color_000066 {color:#000066;}
+.color_000000 {color:#000000;}
+.padding-top-30px {padding-top: 30px;}
+.padding-top-100px {padding-top: 100px;}
+.padding-bottom-30px {padding-bottom: 30px;}
+.padding-bottom-100px {padding-bottom: 100px;}
+
+@media (max-width: 767px) {
+    body {padding-top: 90px;} /* Seitenkopf Abstand oben: Platz für header und nav */
+    .navbar {padding-top: 0;}
+    .navbar-header img {height: 100%; width: auto;}
+}
+
+/* cards */
+.w3-card-4 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.width-70 {width: 70%;}
+
+/* main menu */
+.navbar-nav > li {
+    margin-left: 5px;
+}
+
+/* contact form 7 */
+#wpcf7-f72-p17-o1 input,
+#wpcf7-f72-p17-o1 textarea {
+    width: 100%;
+}
+#wpcf7-f72-p17-o1 label {
+    font-weight: normal;
+}
+.contact-form-lead-text {margin-top: 0 !important;}
+.icon-briefumschlag img {
+    width: 60%;
+    height: auto;
+    opacity: 0.5;
+}
